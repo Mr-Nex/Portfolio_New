@@ -1,5 +1,6 @@
 import React from 'react'
 import Typed from 'react-typed';
+import resume from "../data/Nitin's Resume.pdf";
 
 const Header = () => {
     return (
@@ -10,12 +11,15 @@ const Header = () => {
 
                 <Typed
                     className="typed-text"
-                    strings={["DSA", "Java", "Problem Solving", "Spring", "API"]}
+                    strings={["DSA", "Java", "Problem Solving", "Spring Boot", "Spring MVC","Rest API","SQL","Linux","NoSQL","Competitive Programming"]}
                     typeSpeed = {40}
                     backSpeed = {60}
                     loop
                 />
-                <a href="#" className="btn-main-offer">Contact Me</a>
+                <div className="btn-main">
+                <a href={resume} className="btn-main-offer" target="_blank">View Resume</a>
+                <a href={resume} className="btn-main-offer" download>Download Resume</a>
+                </div>
             </div>
             
         </div>

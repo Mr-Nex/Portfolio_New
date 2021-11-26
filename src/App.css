@@ -39,20 +39,23 @@
 
 :root{
   --primary-white : #fff;
-  --primary-orange : #f9ab00;
+  --primary-teal : #30879c;
+  --primary-light-teal : #81a5ad;
   --primary-dark : rgba(255,255,255,0);
-  --primary-red : #ef4035;
-  --primary-hover-red : #f33501;
+  --primary-hover-teal : #46c0df;
 }
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montagu+Slab:wght@200&family=Teko:wght@300&display=swap');
 body {
-  font-family: 'Teko', sans-serif;
+  /* font-family: 'Teko', sans-serif; */
+  font-family: 'Caveat', cursive;
 }
 
 /************* Navbar *************/
 nav{
   z-index : 2;
-  font-family: 'Teko', sans-serif;
+  /* font-family: 'Teko', sans-serif; */
+  font-family: 'Caveat', cursive;
 }
 .logo {
   width : 10rem;
@@ -88,18 +91,18 @@ nav ul li{
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-top : 0.1875rem solid var(--primary-orange);
+  border-top : 0.1875rem solid var(--primary-teal);
 }
 
 .navbar-nav > li > a:hover{
-  border-top : 0.1875rem solid var(--primary-orange);
+  border-top : 0.1875rem solid var(--primary-teal);
 }
 
 /******** Header ******/
 
 .header-wrapper{
   position : relative;
-  background : url(about.png) no-repeat;
+  background : url(PortCover.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height : 90vh;
@@ -116,19 +119,19 @@ nav ul li{
   justify-content : center;
   align-items : center;
   text-align : center;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Caveat', cursive;
   z-index : 1;
 }
 
 .main-info h1{
-  color : var(--primary-orange);
+  color : var(--primary-teal);
   text-transform : uppercase;
 }
 
 /******** Typed Text *******/
 .typed-text {
   font-size : 2rem;
-  color : var(--primary-white);
+  color : var(--primary-light-teal);
 }
 
 @media(max-width: 768px){
@@ -140,8 +143,12 @@ nav ul li{
   }
 }
 
+.btn-main{
+  display: flex;
+}
+
 .btn-main-offer{
-  border : 1px solid var(--primary-red);
+  border : 1px solid var(--primary-teal);
   text-transform: uppercase;
   border-radius : 0;
   padding : 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -152,7 +159,7 @@ nav ul li{
 
 .btn-main-offer:hover{
   text-decoration: none;
-  background-color: rgba(151, 56, 56, 0.7);
+  background-color: rgba(56, 129, 151, 0.7);
   color : var(--primary-white);
   transition: .2s ease-in-out;
 }
@@ -163,9 +170,9 @@ nav ul li{
   width : 100vw;
   z-index : 1;
 }
-
+/* 
 @media(max-width: 768px){
   .particles-canvas{
     display: none;
   }
-}
+} */
